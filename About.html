@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travelix Blog</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      position: relative;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 70px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .main-content {
+      flex: 3;
+      margin-right: 20px;
+    }
+
+    .post {
+      position: relative;
+    }
+
+    .post img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .date-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: orange;
+      color: white;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .sidebar {
+      flex: 1;
+      border-left: 1px solid #ccc;
+      padding-left: 20px;
+    }
+
+    .sidebar input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar h3 {
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      margin: 8px 0;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="hero-image" src="https://themewagon.github.io/travelix/images/blog_background.jpg" alt="Blog Header" />
+    <div class="text-overlay">THE BLOG</div>
+  </header>
+
+  <div class="container">
+    <div class="main-content">
+      <div class="post">
+        <img src="https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blog Post" />
+        <div class="date-badge">
+          <div>30</div>
+          <small>april,2025</small>
+        </div>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <input type="text" placeholder="Search..." />
+      <h3>Archives</h3>
+      <ul>
+        <li>January 2025</li>
+        <li>February 2025</li>
+        <li>March 2025</li>
+      </ul>
+    </aside>
+  </div>
+  <style>
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .main-content {
+      flex: 3;
+      margin-right: 30px;
+    }
+
+    .post-meta {
+      color: #777;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .post-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .post-desc {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .read-more {
+      color: orange;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .post-image-container {
+      position: relative;
+      margin-top: 30px;
+    }
+
+    .post-image-container img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .date-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: orange;
+      color: white;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .sidebar {
+      flex: 1;
+    }
+
+    .sidebar h3 {
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+
+    .sidebar ul li {
+      margin: 8px 0;
+      color: #555;
+    }
+
+    .latest-posts {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .latest-post {
+      display: flex;
+      gap: 10px;
+    }
+
+    .latest-post img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .latest-post-text {
+      font-size: 14px;
+      color: #444;
+    }
+
+    .latest-post-text small {
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  
+    <style>
+
+        .container {
+          display: flex;
+          max-width: 1200px;
+          margin: 40px auto;
+          padding: 0 20px;
+        }
+    
+        .main-content {
+          flex: 3;
+          margin-right: 30px;
+        }
+    
+        .post-meta {
+          color: #777;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+    
+        .post-title {
+          font-size: 28px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+    
+        .post-desc {
+          font-size: 16px;
+          color: #555;
+          margin-bottom: 20px;
+          line-height: 1.6;
+        }
+    
+        .read-more {
+          color: orange;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 14px;
+          text-decoration: none;
+        }
+    
+        .post-image-container {
+          position: relative;
+          margin-top: 30px;
+        }
+    
+        .post-image-container img {
+          width: 100%;
+          border-radius: 5px;
+        }
+    
+        .date-badge {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          background-color: orange;
+          color: white;
+          border-radius: 50%;
+          width: 80px;
+          height: 80px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          font-size: 16px;
+        }
+    
+        .sidebar {
+          flex: 1;
+        }
+    
+        .sidebar h3 {
+          margin-bottom: 10px;
+        }
+    
+        .sidebar ul {
+          list-style: none;
+          padding-left: 0;
+          margin-bottom: 30px;
+        }
+    
+        .sidebar ul li {
+          margin: 8px 0;
+          color: #555;
+        }
+    
+        .latest-posts {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+    
+        .latest-post {
+          display: flex;
+          gap: 10px;
+        }
+    
+        .latest-post img {
+          width: 60px;
+          height: 60px;
+          object-fit: cover;
+          border-radius: 4px;
+        }
+    
+        .latest-post-text {
+          font-size: 14px;
+          color: #444;
+        }
+    
+        .latest-post-text small {
+          color: #777;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <div class="container">
+        <div class="main-content">
+          <div class="post-meta">by Lore Papp | Uncategorized | 3 Comments</div>
+          <div class="post-title">Try these new dream destinations</div>
+          <div class="post-desc">
+            Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla.
+            Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.
+          </div>
+          <a class="read-more" href="#">READ MORE</a>
+    
+          <div class="post-image-container">
+            <img src="https://images.pexels.com/photos/2265876/pexels-photo-2265876.jpeg?auto=compress&cs=tinysrgb&w=600"  height="800px" alt="">
+            <div class="date-badge">
+              <div>30</div>
+              <small>april,2025</small>
+            </div>
+          </div>
+        </div>
+    
+        <aside class="sidebar">
+          <h3>Categories</h3>
+          <ul>
+            <li>Travel</li>
+            <li>Exotic Destinations</li>
+            <li>City Breaks</li>
+            <li>Travel Tips</li>
+            <li>Lifestyle & Travel</li>
+            <li>City Breaks</li>
+            <li>Uncategorized</li>
+          </ul>
+          <h3>Latest Posts</h3>
+          <div class="latest-posts">
+            <div class="latest-post">
+              <img src="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              <div class="latest-post-text">
+                A simple blog post<br />
+                <small>by anish/ 25,2025</small>
+              </div>
+            </div>
+            <div class="latest-post">
+              <img src="https://tse4.mm.bing.net/th?id=OIP.EEFV3j_WxmTVlgQVRm-8wAHaFj&pid=Api&P=0&h=180" alt="">
+              <div class="latest-post-text">
+                Dream destination for you<br />
+                <small>by anish/ 25,2025</small>
+              </div>
+            </div>
+      <div class="latest-posts">
+        <div class="latest-post">
+          <img src="https://themewagon.github.io/travelix/images/latest_4.jpg" alt="">
+          <div class="latest-post-text">
+         how to pick your vacation<br/>
+            <small>by anish/ 25,2025</small>
+          </div>
+        </div>
+        <div class="latest-posts">
+            <div class="latest-post">
+              <img src="https://tse2.mm.bing.net/th?id=OIP.g_EqQqOPDVERwjid8a-c5QHaE8&pid=Api&P=0&h=180" alt="">
+              <div class="latest-post-text">
+             how to pick your vacation<br/>
+                <small>by anish/ 25,2025</small>
+              </div>
+            </div>
+        </div>
+    </aside>
+      </div>
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <title>Travel Blog Layout</title>
+        <style>
+          body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: #fff;
+            color: #333;
+          }
+      
+          .container {
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+            gap: 40px;
+          }
+      
+          .blog-post {
+            flex: 3;
+          }
+      
+          .blog-post h2 {
+            font-size: 28px;
+            color: #444;
+          }
+      
+          .blog-post p {
+            line-height: 1.7;
+            color: #666;
+            margin: 20px 0;
+          }
+      
+          .read-more {
+            color: #ff9000;
+            font-weight: bold;
+            text-decoration: none;
+          }
+      
+          .blog-img-wrapper {
+            position: relative;
+            margin-top: 20px;
+          }
+      
+          .blog-img-wrapper img {
+            width: 100%;
+            border-radius: 8px;
+          }
+      
+          .date-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #ff9000;
+            color: white;
+            text-align: center;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          }
+      
+          .date-badge span:first-child {
+            font-size: 20px;
+          }
+      
+          .sidebar {
+            flex: 1;
+          }
+      
+          .sidebar h3 {
+            margin-bottom: 10px;
+          }
+      
+          .insta-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+          }
+      
+          .insta-grid img {
+            width: 100%;
+            border-radius: 4px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+          }
+        </style>
+      </head>
+      <body>
+      
+        <div class="container">
+          <!-- Blog Post Section -->
+          <div class="blog-post">
+              <div class="post-meta">by Lore Papp | Uncategorized | 3 Comments</div>
+            <h2>Try these new dream destinations</h2>
+            <p>
+              Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. 
+              Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum qua.
+            </p>
+            <a href="#" class="read-more">READ MORE</a>
+      
+            <div class="blog-img-wrapper">
+              <img src="https://www.newdelhiairport.in/media/2265/tips-for-air-travel-packing.jpg" alt="">
+              <div class="date-badge">
+                <span>30</span>
+                <span>april,2025</span>
+              </div>
+            </div>
+          </div>
+      
+          <div class="sidebar">
+            <h3>Instagram</h3>
+            <div class="insta-grid">
+              <img src="https://tse3.mm.bing.net/th?id=OIP.p3kgMwfbzzDOGUXBBOKqggHaEK&pid=Api&P=0&h=180" alt="">
+              <img src="https://tse3.mm.bing.net/th?id=OIP.jY08TlzC_uY4Zv9HmtnzpAHaE8&pid=Api&P=0&h=180" alt="">
+              <img src="https://tse4.mm.bing.net/th?id=OIP.4gjdX2H7QAHibppqq1wa3AHaFj&pid=Api&P=0&h=180" alt="">
+              <img src="https://tse3.mm.bing.net/th?id=OIP.TrJYCtNVysSB_C6bB5xr3AHaE8&pid=Api&P=0&h=180" alt="">
+              <img src="https://tse4.mm.bing.net/th?id=OIP.UTpFGiR43qDyUmcbL0xiqwHaE7&pid=Api&P=0&h=180" alt="">
+              <img src="https://tse2.mm.bing.net/th?id=OIP.Whl1F6eaW7o-l9b8RX_e1wHaE8&pid=Api&P=0&h=180" alt="">
+            </div>
+          </div>
+        </div>
+      </body>
+      </html>

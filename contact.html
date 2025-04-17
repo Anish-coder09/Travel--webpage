@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://tse3.mm.bing.net/th?id=OIP.yC-EWX9hy-5VkA9TZfDSUgHaEo&pid=Api&P=0&h=180') no-repeat center center/cover;
+      height: 600px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(35, 4, 60, 0.5); /* dark overlay */
+    }
+
+    .hero h1 {
+      position: relative;
+      color: white;
+      font-size: 64px;
+      font-weight: bold;
+      z-index: 1;
+    }
+
+    /* About Content */
+    .about-section {
+      padding: 60px 40px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+ 
+ </style>
+</head>
+<body>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1>ABOUT US</h1>
+  </section>
+</body>
+</html>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .section-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .image-container {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .content-container {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .content-container h2 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .content-container p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .btn-explore {
+      display: inline-block;
+      padding: 14px 32px;
+      background: linear-gradient(to right, #fbb034, #ff5e62, #a44bf2);
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn-explore:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+      .section-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .content-container {
+        padding: 20px 10px;
+      }
+
+      .content-container h2 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="section-container">
+    <div class="image-container">
+      <img src="https://themewagon.github.io/travelix/images/intro.png" alt="Beach Travel Book" />
+    </div>
+    <div class="content-container">
+      <h2>WE HAVE THE BEST TOURS</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna.
+        Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum. Aenean in lacus ligula. Phasellus euismod gravida eros.
+        Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper.
+        Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum quam placerat non.
+        Etiam venenatis nibh augue, sed eleifend justo tristique eu.
+      </p>
+      <button class="btn-explore">EXPLORE NOW &nbsp; &#9679;&#9679;&#9679;</button>
+    </div>
+  </section>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Years Statistics</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .stats-section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .stats-section h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .stats-section p {
+      max-width: 700px;
+      margin: 0 auto 50px;
+      color: #888;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .stats-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .stats-labels,
+    .stats-values,
+    .stats-bars {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .stats-labels {
+      text-align: right;
+    }
+
+    .stats-values {
+      text-align: left;
+    }
+
+    .stats-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .icon {
+      font-size: 20px;
+      color: orange;
+    }
+
+    .year-column {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .year-title {
+      font-weight: bold;
+      color: orange;
+      font-size: 14px;
+    }
+
+    .stat-numbers {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .stat-label {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .bar {
+      width: 200px;
+      height: 4px;
+      background: #ddd;
+      position: relative;
+      margin: 18px 0;
+    }
+
+    .bar span {
+      position: absolute;
+      height: 100%;
+    }
+
+    .bar-text {
+      margin-top: -10px;
+      font-size: 14px;
+      color: #888;
+      text-align: center;
+    }
+
+    .bar-purple span { background: #4a0072; width: 70%; right: 0; }
+    .bar-lightpurple span { background: #ba68c8; width: 50%; left: 0; }
+    .bar-orange span { background: #ffa726; width: 60%; left: 0; }
+    .bar-orange-wide span { background: #ffb74d; width: 90%; left: 0; }
+
+    @media (max-width: 768px) {
+      .stats-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .bar {
+        width: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="stats-section">
+    <h2>YEARS STATISTICS</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. 
+      Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum.
+      Aenean in lacus ligula.
+    </p>
+
+    <div class="stats-grid">
+      <!-- 2016 Column -->
+      <div class="year-column stats-labels">
+        <div class="year-title">2024</div>
+        <div class="stats-item"><span class="icon">🏖</span><div><div class="stat-numbers">1642</div><div class="stat-label">Clients</div></div></div>
+        <div class="stats-item"><span class="icon">⛵</span><div><div class="stat-numbers">798</div><div class="stat-label">Returning Clients</div></div></div>
+        <div class="stats-item"><span class="icon">🎣</span><div><div class="stat-numbers">11546</div><div class="stat-label">Reach</div></div></div>
+        <div class="stats-item"><span class="icon">⏱</span><div><div class="stat-numbers">3729</div><div class="stat-label">Items</div></div></div>
+      </div>
+
+      <!-- Bars + Percentages -->
+      <div class="stats-bars">
+        <div class="bar bar-purple"><span></span></div>
+        <div class="bar bar-lightpurple"><span></span></div>
+        <div class="bar bar-orange"><span></span></div>
+        <div class="bar bar-orange-wide"><span></span></div>
+      </div>
+
+      <!-- 2017 Column -->
+      <div class="year-column stats-values">
+        <div class="year-title">2025</div>
+        <div class="stats-item"><div><div class="stat-numbers">3527</div><div class="stat-label">Clients</div></div><span class="icon">🏖</span></div>
+        <div class="stats-item"><div><div class="stat-numbers">245</div><div class="stat-label">Returning Clients</div></div><span class="icon">⛵</span></div>
+        <div class="stats-item"><div><div class="stat-numbers">9321</div><div class="stat-label">Reach</div></div><span class="icon">🎣</span></div>
+        <div class="stats-item"><div><div class="stat-numbers">17429</div><div class="stat-label">More Items</div></div><span class="icon">⏱</span></div>
+      </div>
+    </div>
+  </section>
+ 
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+    /* HERO IMAGE SECTION */
+    .hero {
+      position: relative;
+      text-align: left;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 60px;
+      transform: translateY(-50%);
+      color: white;
+      text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin: 10px 0 20px;
+    }
+
+    .hero-text .btn {
+      padding: 10px 25px;
+      border: none;
+      font-size: 14px;
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    /* STATS SECTION */
+    .stats {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+      gap: 60px;
+      flex-wrap: wrap;
+      background: #fff;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-item i {
+      font-size: 36px;
+      color: orange;
+      margin-bottom: 10px;
+    }
+
+    .stat-item:nth-child(3) i,
+    .stat-item:nth-child(4) i {
+      color: purple;
+    }
+
+    .stat-item h2 {
+      font-size: 28px;
+      margin: 5px 0;
+    }
+
+    .stat-item p {
+      margin: 0;
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Image Section -->
+  <div class="hero">
+    <img src="https://images.pexels.com/photos/33689/ship-boat-lake-garda-italy.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Boat Tour in Thailand">
+    <div class="hero-text">
+      <h1>THAILAND</h1>
+      <p>From <strong>$999</strong></p>
+      <button class="btn">EXPLORE NOW</button>
+    </div>
+  </div>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stat-item">
+      <i>🧭</i>
+      <h2>255</h2>
+      <p>CLIENTS</p>
+    </div>
+    <div class="stat-item">
+      <i>🎣</i>
+      <h2>1176</h2>
+      <p>PROJECTS</p>
+    </div>
+    <div class="stat-item">
+      <i>🌍</i>
+      <h2>39</h2>
+      <p>COUNTRIES</p>
+    </div>
+    <div class="stat-item">
+      <i>🎒</i>
+      <h2>127</h2>
+      <p>COFFEES</p>
+    </div>
+  </section>
+</body>
+</html>
