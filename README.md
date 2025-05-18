@@ -2,7 +2,7 @@
 A responsive and visually appealing Travel Website designed to showcase beautiful travel destinations, provide travel-related services, and enhance user engagement through smooth UI/UX features.
 
 🚀 Live Demo
-👉 Visit the Website(http://127.0.0.1:5500/index.html)
+👉 Visit the Website(https://resplendent-gumdrop-39f00d.netlify.app/))
 
 📌 Features
 ✨ Responsive Design – Works smoothly on desktop, tablet, and mobile.
