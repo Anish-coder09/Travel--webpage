@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destinations — Travelix</title>
+<meta name="description" content="Explore Travelix's curated collection of global destinations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-mark">✈</span> Travelix</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="login.html" class="btn btn-outline">Login</a>
+      <a href="login.html" class="btn btn-primary">Register</a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+  </nav>
+</header>
+<main>
+
+<section class="page-hero">
+  <img src="assets/hero-travel.jpg" alt="">
+  <h1>Destinations</h1>
+  <p>Six places we keep coming back to — and the stories they've inspired.</p>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="grid"><article class="card">
+    <div class="card-img"><img src="assets/dest-santorini.jpg" alt="Santorini, Greece" loading="lazy"></div>
+    <div class="card-body">
+      <div class="place">Greece</div>
+      <h3>Santorini, Greece</h3>
+      <p>Whitewashed cliffside villages above the caldera.</p>
+      <div class="card-foot"><span class="price">From $1,290<small> / person</small></span><a class="btn btn-outline" href="destinations.html">View</a></div>
+    </div></article><article class="card">
+    <div class="card-img"><img src="assets/dest-bali.jpg" alt="Bali, Indonesia" loading="lazy"></div>
+    <div class="card-body">
+      <div class="place">Indonesia</div>
+      <h3>Bali, Indonesia</h3>
+      <p>Rice terraces, temples and turquoise shores.</p>
+      <div class="card-foot"><span class="price">From $980<small> / person</small></span><a class="btn btn-outline" href="destinations.html">View</a></div>
+    </div></article><article class="card">
+    <div class="card-img"><img src="assets/dest-kyoto.jpg" alt="Kyoto, Japan" loading="lazy"></div>
+    <div class="card-body">
+      <div class="place">Japan</div>
+      <h3>Kyoto, Japan</h3>
+      <p>Ancient shrines and cherry blossom lanes.</p>
+      <div class="card-foot"><span class="price">From $1,540<small> / person</small></span><a class="btn btn-outline" href="destinations.html">View</a></div>
+    </div></article><article class="card">
+    <div class="card-img"><img src="assets/dest-marrakech.jpg" alt="Marrakech, Morocco" loading="lazy"></div>
+    <div class="card-body">
+      <div class="place">Morocco</div>
+      <h3>Marrakech, Morocco</h3>
+      <p>Spice markets and palace courtyards.</p>
+      <div class="card-foot"><span class="price">From $860<small> / person</small></span><a class="btn btn-outline" href="destinations.html">View</a></div>
+    </div></article><article class="card">
+    <div class="card-img"><img src="assets/dest-iceland.jpg" alt="Reykjavik, Iceland" loading="lazy"></div>
+    <div class="card-body">
+      <div class="place">Iceland</div>
+      <h3>Reykjavik, Iceland</h3>
+      <p>Geysers, glaciers and the northern lights.</p>
+      <div class="card-foot"><span class="price">From $1,720<small> / person</small></span><a class="btn btn-outline" href="destinations.html">View</a></div>
+    </div></article><article class="card">
+    <div class="card-img"><img src="assets/dest-alps.jpg" alt="Swiss Alps" loading="lazy"></div>
+    <div class="card-body">
+      <div class="place">Switzerland</div>
+      <h3>Swiss Alps</h3>
+      <p>Alpine peaks, lakes and storybook villages.</p>
+      <div class="card-foot"><span class="price">From $1,380<small> / person</small></span><a class="btn btn-outline" href="destinations.html">View</a></div>
+    </div></article></div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo"><span class="logo-mark">✈</span> Travelix</div>
+        <p style="color:var(--muted);margin-top:14px;font-size:.95rem">Curated journeys across the globe. We design trips that feel like stories worth telling.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="blog.html">Travel Blog</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>+45 345 332 4567</li>
+          <li>hello@travelix.co</li>
+          <li>Copenhagen, DK</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <p style="color:var(--muted);font-size:.9rem">Wanderlust in your inbox, monthly.</p>
+        <form class="newsletter" data-handle>
+          <input type="email" placeholder="you@example.com" required>
+          <button>Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Travelix. All rights reserved.</div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

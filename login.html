@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login — Travelix</title>
+<meta name="description" content="Sign in to your Travelix account.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-mark">✈</span> Travelix</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="login.html" class="btn btn-outline">Login</a>
+      <a href="login.html" class="btn btn-primary">Register</a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+  </nav>
+</header>
+<main>
+
+<section class="auth-wrap">
+  <img src="assets/hero-travel.jpg" alt="">
+  <div class="auth-card">
+    <h1>Welcome back</h1>
+    <p class="sub">Sign in to plan your next escape.</p>
+    <form class="form" data-handle>
+      <div><label>Email</label><input type="email" required placeholder="you@example.com"></div>
+      <div><label>Password</label><input type="password" required placeholder="••••••••"></div>
+      <div class="form-row"><label><input type="checkbox"> Remember me</label><a href="#">Forgot password?</a></div>
+      <button class="btn btn-primary" type="submit">Login</button>
+      <p class="form-msg" style="font-size:.9rem"></p>
+    </form>
+    <p class="alt">Don't have an account? <a href="#">Register</a></p>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo"><span class="logo-mark">✈</span> Travelix</div>
+        <p style="color:var(--muted);margin-top:14px;font-size:.95rem">Curated journeys across the globe. We design trips that feel like stories worth telling.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="blog.html">Travel Blog</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>+45 345 332 4567</li>
+          <li>hello@travelix.co</li>
+          <li>Copenhagen, DK</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <p style="color:var(--muted);font-size:.9rem">Wanderlust in your inbox, monthly.</p>
+        <form class="newsletter" data-handle>
+          <input type="email" placeholder="you@example.com" required>
+          <button>Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Travelix. All rights reserved.</div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

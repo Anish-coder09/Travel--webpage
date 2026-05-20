@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Travelix</title>
+<meta name="description" content="Meet the team behind Travelix.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-mark">✈</span> Travelix</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="login.html" class="btn btn-outline">Login</a>
+      <a href="login.html" class="btn btn-primary">Register</a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+  </nav>
+</header>
+<main>
+
+<section class="page-hero">
+  <img src="assets/about-team.jpg" alt="">
+  <h1>About Travelix</h1>
+  <p>We design journeys that feel like stories worth telling.</p>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="about-grid">
+      <img src="assets/about-team.jpg" alt="Our team">
+      <div>
+        <span class="eyebrow" style="color:var(--accent);font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:.85rem">Our story</span>
+        <h2>Travel that means something</h2>
+        <p>Travelix began with a simple belief — that the best trips aren't the busiest. They're the ones shaped around who you are and what makes you feel alive.</p>
+        <p>Since 2016, we've designed journeys for thousands of travelers across 60+ countries, always slowly, always intentionally.</p>
+        <div class="stats">
+          <div class="stat"><div class="num">10k+</div><div class="lbl">Happy travelers</div></div>
+          <div class="stat"><div class="num">60+</div><div class="lbl">Countries</div></div>
+          <div class="stat"><div class="num">4.9★</div><div class="lbl">Avg rating</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" style="background:#f5f1ea">
+  <div class="container">
+    <div class="section-head"><span class="eyebrow">What we believe</span><h2>Our values</h2></div>
+    <div class="features">
+      <div class="feature"><div class="feature-icon">✦</div><h3>Slow travel</h3><p>Fewer places, deeper experiences.</p></div>
+      <div class="feature"><div class="feature-icon">◎</div><h3>Local first</h3><p>We work with local guides, chefs and hosts.</p></div>
+      <div class="feature"><div class="feature-icon">♥</div><h3>Responsible</h3><p>Tread lightly, give back, leave more than you take.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo"><span class="logo-mark">✈</span> Travelix</div>
+        <p style="color:var(--muted);margin-top:14px;font-size:.95rem">Curated journeys across the globe. We design trips that feel like stories worth telling.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="blog.html">Travel Blog</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>+45 345 332 4567</li>
+          <li>hello@travelix.co</li>
+          <li>Copenhagen, DK</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <p style="color:var(--muted);font-size:.9rem">Wanderlust in your inbox, monthly.</p>
+        <form class="newsletter" data-handle>
+          <input type="email" placeholder="you@example.com" required>
+          <button>Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Travelix. All rights reserved.</div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
